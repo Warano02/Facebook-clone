@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook-connexion ou inscription</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../../../utils/utils/fb_icon_325x325.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="r8e">
+        <img class="logo" src="../../../utils/utils/4lCu2zih0ca.svg" alt="" />
+      </div>
+      <p>Avec Facebook, partagez et restez en contact avec votre entourage.</p>
+    </div>
+    <div class="rigth">
+      <div class="div">
+        <form>
+          <input
+            type="text"
+            placeholder="Adresse e-mail ou numéro de tél."
+            required
+          />
+          <input type="password" placeholder="Mot de passe" required />
+          <button type="submit">Se Connecter</button>
+        </form>
+        <a href="" class="link">Mot de passe oublié ?</a>
+        <span class="hr"></span>
+        <button class="kld"><a href="" id="create">Créer nouveau compte</a></button>
+      </div>
+      <p>
+        <span class="bold">Créer une Page</span> pour une célébrité, une marque
+        ou une entreprise.
+      </p>
+    </div>
+    <footer>
+      <img src="../../../utils/img/Capture d'écran 2024-08-10 122753.png" />
+    </footer>
+
+    <div class="container" id="container">
+      <main>
+        <header>
+          <h1>
+            S'incrire <span><i class="bx bx-x" id="close"></i></span>
+          </h1>
+          <span class="ki">C'est Simple et rapide.</span>
+        </header>
+        <form>
+          <div class="inp1">
+            <input type="text" placeholder="Prénom" required /><span
+              ><i class="bx bx-error-circle i1"></i
+            ></span>
+            <input type="text" placeholder="Nom de famille" required /><span
+              ><i class="bx bx-error-circle i2"></i
+            ></span>
+          </div>
+          <div class="inp2">
+            <input
+              type="text"
+              class="error"
+              placeholder="Numéro mobile ou e-mail"
+              required
+            /><span><i class="bx bx-error-circle i3"></i></span>
+            <input
+              type="password"
+              placeholder="Nouveau mot de passe"
+              required
+            /><span><i class="bx bx-error-circle i4"></i></span>
+          </div>
+          <div class="date">
+            <span>Date de naissance<i class="bx bxs-help-circle"></i></span>
+            <div class="option">
+              <select>
+                <option value="10" id="jour">10</option>
+              </select>
+              <select>
+                <option value="8">août</option>
+                <option value="1">Janvier</option>
+                <option value="2">Février</option>
+                <option value="3">Mars</option>
+                <option value="4">Avril</option>
+                <option value="5">Mai</option>
+                <option value="6">Juin</option>
+                <option value="7">Juillet</option>
+                <option value="8">Août</option>
+                <option value="9">Septembre</option>
+                <option value="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Décembre</option>
+              </select>
+              <select>
+                <option value="2024" id="annee">2024</option>
+              </select>
+            </div>
+          </div>
+          <div class="sex">
+            <span>Genre <i class="bx bxs-help-circle"></i></span>
+            <div class="option">
+              <label for="F" class="ch">Femme</label>
+              <input type="radio" class="ch" id="F" />
+              <label for="H">Homme</label>
+              <input type="radio" class="ch" id="H" />
+              <label for="P">Pérsonaliser</label>
+              <input type="radio" class="ch" id="P" />
+            </div>
+          </div>
+        <div class="txt">
+            <p class="p">Les qui utilise notre services ont pu importer vos coordonées sur Facebook. <a href="">En savoir plus.</a></p><br>
+            <p>En cliquant sur S'inscrire, vous acceptez nos <a href="">Conditions d'utilisation des cookies.</a> Vous receverez peut être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner</p>
+        </div>
+        <button type="submit">S'incrire</button>
+        </form>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-grey: #f4f6f7;
+  --bg-blue: #0d81e0de;
+  --color-black-primary: #000;
+  --bg-white: #fff;
+  --border: #3363e6;
+  --bg-green:#15dd79;
+  --bg-green-h:#0dca6b;
+  --font-p:
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: 110vh;
+  background: var(--bg-grey);
+  position: relative;
+}
+.left {
+  margin-top: 15rem;
+  margin-left: 18rem;
+  width: 50.01rem;
+  height: 13.6rem;
+  font-size: 3rem;
+  color: var(--color-black-primary);
+  position: relative;
+  overflow: hidden;
+}
+.left .r8e {
+  height: 106px;
+  margin: -28px;
+}
+.left .r8e .logo {
+  width: 320.94px;
+}
+.left .r8e p {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
+}
+.rigth {
+  position: absolute;
+  right: 20rem;
+  top: -2rem;
+  width: 396px;
+  height: 496px;
+  /* background: #000; */
+}
+.rigth .div {
+  width: 396px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-white);
+  unicode-bidi: isolate;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+.rigth form input {
+  width: 307px;
+  height: 46px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px 60px 10px 10px;
+  line-height: 16px;
+  margin: 5px;
+  border: 1px solid rgb(221, 223, 226);
+  outline: none;
+  font-size: 1.9rem;
+  color: rgb(29, 33, 41);
+  font-family: "Montserrat", sans-serif;
+}
+.rigth form input::placeholder ,.container main form input::placeholder{
+  font-size: 1.5rem;
+}
+.rigth form input:focus,.container main form input:focus {
+  border-color: #1c4ed6;
+  border-width: 1.5px;
+  box-shadow: 0px 0px 2px 0px var(--border);
+}
+.rigth button {
+  width: 355px;
+  height: 46px;
+  border-radius: 5px;
+  margin: 10px 5px 10px 15px;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #2281ee;
+  cursor: pointer;
+}
+.rigth button:hover {
+  background: #2176d8;
+}
+.rigth button a {
+  text-decoration: none;
+  color: white;
+}
+.rigth .link {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 18px;
+  margin: 10px;
+  font-size: 1.3rem;
+  color: #1c7bb3;
+}
+.rigth .link:hover {
+  text-decoration: underline;
+}
+.rigth .hr {
+  width: 350px;
+  height: 1.2px;
+  background: rgb(167, 165, 165);
+  margin: 5px 10px 20px 25px;
+}
+.rigth .kld {
+  width: 300px;
+  margin-left: 50px;
+  background: var(--bg-green);
+}
+.rigth .kld:hover {
+  background: var(--bg-green-h)
+}
+.rigth p {
+  width: 330px;
+  line-height: 18px;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px;
+}
+.rigth p span {
+  font-weight: bold;
+  cursor: pointer;
+}
+.rigth p span:hover {
+  text-decoration: underline;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer img {
+  width: 100%;
+}
+
+@media (max-width: 1250px) {
+  .left {
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 1152px) {
+  .left {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 1105px) {
+  .left {
+    margin-left: 3rem;
+  }
+  .rigth {
+    right: 15rem;
+  }
+}
+@media (max-width: 994px) {
+  .rigth {
+    right: 2rem;
+  }
+}
+@media (max-width: 895px) {
+  .rigth {
+    right: 1rem;
+  }
+  .left {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 863px) {
+  .rigth {
+    right: 0.2rem;
+  }
+  .left {
+    margin-left: 0.2rem;
+  }
+}
+@media (max-width: 851px) {
+  .left {
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+  .rigth {
+    right: 25%;
+    top: 25%;
+  }
+}
+@media (max-width: 800px) {
+  .left {
+    margin-left: 20%;
+  }
+  .rigth {
+    right: 20%;
+    top: 20%;
+  }
+}
+@media (max-width: 630px) {
+  .left {
+    margin-left: 10%;
+  }
+  .rigth {
+    right: 15%;
+    top: 25%;
+  }
+}
+@media (max-width: 520px) {
+  .rigth {
+    right: 10%;
+  }
+}
+@media (max-width: 460px) {
+  .left .r8e {
+    height: 106px;
+    margin: -32px;
+  }
+  .rigth {
+    right: 5%;
+  }
+}
+@media (max-width: 410px) {
+  .rigth {
+    right: -50px;
+  }
+}
+/***************************************************************************************************************************************
+*                                                 FORMULAIRE DE CREATION DE COMPTE
+******************************************************************************************************************************************/
+.container {
+  position: absolute;
+  top: -150px;
+  width: 100%;
+  height: 135vh;
+  background: #f6f7f4a1;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+
+}
+.container main {
+  width: 435px;
+  height: 650px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: var(--bg-white);
+  margin-top: 80px;
+  padding-top: 5px;
+  position: relative;
+}
+.container main header {
+  width: 100%;
+  height: 85px;
+  border-bottom: 1.5px solid rgb(197, 197, 197);
+  position: relative;
+  padding-left: 10px;
+}
+.container main header h1 {
+  font-size: 3.8rem;
+  letter-spacing: 0.5px;
+  font-family: "Noto Serif", serif;
+  margin-bottom: 5px;
+}
+.container main header h1 span {
+  position: absolute;
+  right: 25px;
+  font-size: 3rem;
+  top: 10px;
+  color: grey;
+  cursor: pointer;
+}
+.container main header h1 span:hover {
+  color: #000;
+}
+.container main header .ki {
+  font-size: 1.5rem;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: rgba(112, 107, 107, 0.925);
+  font-family: "Oswald", sans-serif;
+}
+.container main form {
+  margin-top: 20px;
+  padding: 5px;
+  position: relative;
+}
+.container main form div {
+  width: 100%;
+  position: relative;
+}
+.container main form .inp1 {
+  display: flex;
+  justify-content: space-between;
+}
+.container main form .inp1 input{
+  width: 195px;
+  height: 38px;
+  font-size: 1.5rem;
+  border: 1px solid var(--bg-grey);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+  outline: none;
+}
+.container main form .inp2{
+  width: 100%;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+}
+.container main form .inp2 input{
+  width: 410px;
+  height: 38px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 5px 0 5px 0;
+  padding: 5px;
+  border: 1px solid var(--bg-grey);
+  outline: none;
+}
+.container main form div i{
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  color: red;
+  display: none;/* Change lorsque les informatios qu'enre l'utilisateurs  sont correct*/
+}
+.container main form .i1,.container main form .i2{
+  left: 186px;
+  top: 20px;
+}
+.container main form .i2{
+  left: 396px;
+}
+.container main form .i3{
+  top: 15px;
+}
+.container main form .i4{
+  top: 62px;
+}
+.container main form .date{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.container main form .date i,.container main form .sex i{
+  display: block;
+  color: #000;
+  font-size: 1.2rem;
+  left: 90px;
+  top: 1px;
+}
+.container main form .date .option{
+  width: 100%;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.container main form .date .option select{
+  width: 123px;
+  height: 35px;
+  padding: 5px;
+  border: 1.5px solid var(--bg-grey);
+  outline: none;
+  font: bold;
+}
+.container main form .date .option select:focus{
+  box-shadow: 0px 0px 2px 0px var(--border);
+}
+.container main form .sex span{
+  font-size: 1.2rem;
+}
+.container main form .sex i{
+  left: 30px;
+}
+.container form .sex .option{
+  width: 376px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 60px;
+  padding: 10px;
+  font-size: 1.5rem;
+
+}
+.container form .sex .option label{
+  width: 125px;
+  height: 30px;
+  border: 1px solid var(--bg-grey);
+  margin: 0 5px 5px 5px;
+  padding: 10px 20px 0px 5px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.container form .sex .option label:focus{
+  box-shadow: 0px 0px 2px 0px var(--border);
+
+}
+.container form .sex .option input{
+  position: relative;
+  margin-left: -23px;
+  margin-top: 15px;
+  height: 10px;
+  width: 10px;
+}
+.container form .txt{
+  margin: 5px ;
+  width: 392px;
+  height: 100px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  /* font-family: "Montserrat", sans-serif; */
+  color: grey;
+}
+.container form .txt a{
+  color: var(--bg-blue);
+  text-decoration: none;
+}
+.container form .txt a:hover{
+  text-decoration: underline;
+}
+.container .txt .p{
+  width: 384px;
+}
+.container form button{
+  width: 200px;
+  height:44px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: var(--bg-green);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 40px 0 10px 100px;
+  cursor: pointer;
+}
+.container form button:hover{
+  background: var(--bg-green-h);
+}
