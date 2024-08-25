@@ -1,6 +1,6 @@
-let controlers1 = document.querySelector(".controllers div code")
+let controllers1 = document.querySelector(".controllers div code")
 let details = document.querySelector('.details')
-controlers1.addEventListener('click', () => details.classList.toggle('disable'))
+controllers1.addEventListener('click', () => details.classList.toggle('disable'))
 
 let slideBar = document.querySelector('main .container-right')
 let showSlide = document.querySelector('main .container header .call .bxs-info-circle')

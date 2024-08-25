@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --bg-header: #222222;
+    --bg-div-hover: #6460602c;
+    --bg-black-primary: #1a1a1a;
+    --bg-black-secondary: #222222ea;
+    --bg-incoming-msg: #3d3d3d;
+    --bg-black-2: #252525;
+    --bg-black-3: #1d1d1d5e;
+    --bg-hr: #6e6d6d;
+    --bg-input-primary: #837e7e50;
+    --color-white-primary: #ecebeb;
+    --color-white-secondary: white;
+    --color-white-3: rgb(185, 185, 185);
+    --color-blue-primary: #0e28bb;
+    --color-icon-primary: #0c0c0c;
+    --icon-primary: rgb(241, 233, 233);
+    --bg-red: rgba(255, 0, 0, 0.89);
+    --bg-input-secondary: rgb(63, 63, 63);
+    --corlor-grey-text: #383636;
+    --color-a-primary: #3c85d8d8;
+    --color-but-blue-primary: #096ad8d8;
+    --color-a-second: #162df8;
+    --bg-green-online: #4acc22;
+    --bg-blue-2: #368ceef8;
+    --bg-span: #e2e2e2;
+    --bg-sending-m: #0874f0f8;
+  }
