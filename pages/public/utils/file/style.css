@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
 @import url("../../../../css/var.css");
 @import url("../../../../css/component.css");
 .disable,
@@ -8,6 +10,19 @@
 /********************************************************************************************************************
 *      Entête contenant la bar de navigation
 **********************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+svg{
+  fill: var(--bg-span);
+}
+a{
+  font-weight: 500;
+  color: gray;
+  text-decoration: none;
+}
 .container .containt .main header {
   width: 100%;
   height: 58px;
@@ -18,9 +33,13 @@
   display: flex;
 }
 head .details .fotter a,
-.container .left .footter p a {
+.container .left .footter p {
   text-decoration: none;
-  color: grey;
+  color: #bbb;
+  font-weight: 400;
+  font-size: 12px;
+  /* background-color: red; */
+  margin-top: 1rem;
 }
 .head .details .fotter a:hover,
 .container .left .footter p a:hover {
@@ -28,15 +47,21 @@ head .details .fotter a,
 }
 
 .container {
-  width: 1364px;
-  padding-top: 60px;
+  width: 100%;
+  padding-top: 5%;
   position: relative;
   display: flex;
+  justify-content: stretch;
 }
 
 .container .left {
-  width: 305px;
-  height: 572px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 1rem;
+  width: 25vw;
+  height: 100vh;
   background: var(--bg-black-3);
   color: var(--color-white-primary);
   font-weight: bold;
@@ -44,28 +69,50 @@ head .details .fotter a,
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.container .left .data div,
-.container .left .footter div {
-  width: 297px;
+
+.container .left .data{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0;
+}
+.container .left .data div{
+  width: 20vw;
   height: 45px;
-  margin: 5px;
   cursor: pointer;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: start;
+  margin-left: 5px;
+  /* background-color: red;  */
+}
+
+.container .left .data hr{
+  width: 20vw;
+  height: 1px;
+  border: none;
+  background: var(--bg-hr);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 5px;
 }
 .container .left .data div:hover,
 .container .left .footter div:hover {
   background: var(--bg-input-primary);
 }
-.container .left .data::after {
+
+
+/* J'ai essayez de remplace le pseudo-element ::aftrer par la balise hr */
+/* .container .left .data::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
   background: var(--bg-hr);
-  margin-left: 10px;
-}
+  margin-left: 5px;
+  bottom: 0;
+} */
 .container .left .data div span,
 .container .left .footter div span {
   width: 36px;
@@ -80,71 +127,87 @@ head .details .fotter a,
 }
 .container .left .data div a {
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--color-white-primary);
   text-decoration: none;
   width: 100%;
 }
-.container .left .data div .span,
-.container .left .footter div span {
+.container .left .data div .span {
   width: 40px;
-  height: 40px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  color: var(--color-white-primary);
-  background: var(--bg-black-3);
+  background-color: var(--bg-incoming-msg);
 }
-
 .container .left .data section {
   display: none;
+  overflow: hidden;
+  height: 50%;
 }
 .container .left .footter {
   padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 1rem; */
+  height: max-content;
+  gap: 5px;
 }
 .container .left .footter h2 {
   letter-spacing: 0.5px;
-  color: var(--color-white-secondary);
+  color: var(--color-white-3);
   width: 100%;
+  font-size: 0.8rem;
   position: relative;
+  margin-bottom: .5rem;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.container .left .footter h2 span {
-  position: absolute;
-  right: 5px;
-  font-size: 16px;
-  width: 55px;
-  height: 35px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  background: var(--bg-black-secondary);
+
+.container .left .footter .BR5{
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px 0;
+  width: 100%;
+  font-size: 12px;
+  padding: 5px;
+  margin-left: -5px;
+}
+.container .left .footter .BR5 img{
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -2px;
-  transition: 0.5s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+}
+.container .left .footter h2 span {
+  color: white;
+  text-align: center;
+  padding: 2px 5px;
   opacity: 0;
-  cursor: pointer;
 }
 .container .left .footter h2 span:hover {
   opacity: 1;
 }
+.container .left .footter:hover h2 span{
+  opacity: 1;
+}
 
 .container .left .footter h2 span a {
-  text-decoration: none;
-  color: var(--color-blue-primary);
+  /* text-decoration: none; */
+  color: var(--color-but-blue-primary);
+  font-size: 1.2rem;
+  padding: 6px 12px;
+  border-radius: 6px;
 }
+
 .container .left .footter h2 span a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-color: var(--bg-input-primary);
 }
 .container .left .footter div span img {
   width: 38px;
@@ -159,16 +222,11 @@ head .details .fotter a,
 }
 .container .left .footter div a {
   width: 250px;
-
   text-overflow: ellipsis;
   text-decoration: none;
   color: var(--color-white-primary);
   font-weight: bold;
   margin-left: 5px;
-}
-.container .left .footter div:nth-child(4) span {
-  background: #f1c917;
-  color: #4b5720;
 }
 
 .container .left::-webkit-scrollbar,
@@ -192,15 +250,48 @@ head .details .fotter a,
 .container .right::-webkit-scrollbar-thumb:hover {
   display: block;
 }
+
+
+.container  .left .p-flt-f{
+  display: flex;
+  color: var(--color-white-3);
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  font-size: 12px;
+  gap: 6px;
+  bottom: 0;
+}
+
+.container  .left .p-flt-f a:hover{
+  text-decoration: underline;
+}
+.container  .left .p-flt-f a,
+.container  .left .p-flt-f span{
+  color: var(--color-white-3);
+  position: relative;
+}
+
+.container .left .p-flt-f a::after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: var(--color-white-3);
+  right: -4px;
+  top: 50%;
+}
 /* Portion des des status et des publications */
 .container .containt {
-  width: 690px;
+  width: 35vw;
   position: relative;
   margin-top: 1px;
-  margin-left: 400px;
+  margin-left: 25vw;
   position: relative;
   padding-top: 1pc;
-  overflow: initial;
 }
 .container .containt section {
   height: 255px;
