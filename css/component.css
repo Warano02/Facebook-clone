@@ -27,6 +27,13 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+.BR15{
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 .BR5{
     border-radius: 5px;
     -webkit-border-radius: 5px;
