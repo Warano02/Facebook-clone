@@ -13,6 +13,23 @@ body {
     align-items:center;
     justify-content: center;
 }
+.ACJS{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AC{
+  display: flex;
+  align-items: center;
+}
+.JC{
+  display: flex;
+  justify-content: center;
+}
+.JS{
+  display: flex;
+  justify-content: space-between;
+}
 .BR50{
     border-radius: 50%;
     -webkit-border-radius: 50%;

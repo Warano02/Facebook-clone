@@ -40,9 +40,6 @@ section .head {
   position: relative;
   background: none;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-size: 1.7em;
   font-weight: bold;
   color: var(--color-white-3);
@@ -65,8 +62,6 @@ section a div {
   width: 13.5em;
   height: 3.2em;
   margin: 5px;
-  display: flex;
-  align-items: center;
   font-size: 20px;
 }
 section a div:hover {
@@ -97,20 +92,13 @@ main {
   left: 18.1em;
   position: absolute;
   background: #000;
-  display: flex;
   flex-wrap: wrap;
   padding: 60px;
-  justify-content: space-between;
 }
 main .container {
   width: calc(25% - 10px);
   margin-bottom: 10px;
   height: 400px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
   background: var(--bg-black-3);
   position: relative;
   border: 0.5px solid var(--bg-black-2);
@@ -141,11 +129,6 @@ main .container .btn-list {
 main .container .btn-list button {
   width: 210px;
   height: 45px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border: none;
   outline: none;
   font-size: 16px;
@@ -189,14 +172,11 @@ main .add-friend .btn-list button:last-child {
   height: 100px;
   border-bottom: 0.5px solid var(--bg-black-2);
   position: relative;
-  display: flex;
-  align-items: center;
   border-bottom: 0.2px solid var(--bg-black-2);
 }
 .section .header .commit-back {
   width: 60px;
   height: 100%;
-
   position: relative;
 }
 .section .header .commit-back span {
@@ -289,5 +269,10 @@ main .add-friend .btn-list button:last-child {
   flex-direction: column;
 }
 .messages h2 {
+  color: var(--color-white-3);
+}
+.section .data .user .rows h4 + span {
+  position: absolute;
+  right: 15px;
   color: var(--color-white-3);
 }
