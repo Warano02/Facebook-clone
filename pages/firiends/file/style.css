@@ -18,7 +18,7 @@
   --icon-primary: rgb(241, 233, 233);
   --bg-red: rgba(255, 0, 0, 0.89);
   --bg-input-secondary: rgb(63, 63, 63);
-  --corlor-grey-text: #383636;
+  --color-grey-text: #383636;
   --color-a-primary: #3c85d8d8;
   --color-but-blue-primary: #096ad8d8;
   --color-a-second: #162df8;
@@ -26,6 +26,7 @@
   --bg-blue-2: #368ceef8;
   --bg-span: #e2e2e2;
   --bg-sending-m: #0874f0f8;
+  --bg-btn-blue: rgb(11, 97, 177);
 }
 section {
   width: 18em;
@@ -154,26 +155,139 @@ main .container .btn-list button {
   cursor: pointer;
   letter-spacing: 1px;
 }
-main .container .btn-list button:hover {
+main .container .btn-list button:hover,
+.section .data .user .rows .btn-list button:hover {
   background: rgb(9, 84, 155);
 }
-main .container .btn-list button:last-child {
+main .container .btn-list button:last-child,
+.section .data .user .rows .btn-list button:last-child {
   background: rgba(66, 65, 65, 0.418);
 }
-main .container .btn-list button:last-child:hover {
+main .container .btn-list button:last-child:hover,
+.section .data .user .rows .btn-list button:last-child:hover {
   background: rgba(66, 65, 65, 0.534);
 }
-main .add-friend .btn-list button{
-    background: rgba(9, 93, 250, 0.308);
-    color: #0e28bb;
+main .add-friend .btn-list button {
+  background: rgba(9, 93, 250, 0.308);
+  color: #0e28bb;
 }
-main .add-friend .btn-list button:hover{
-    background: rgba(9, 93, 250, 0.5);
+main .add-friend .btn-list button:hover {
+  background: rgba(9, 93, 250, 0.5);
 }
-main .add-friend .btn-list button:hover{
-    background: rgba(9, 93, 250, 0.541);
+main .add-friend .btn-list button:hover {
+  background: rgba(9, 93, 250, 0.541);
 }
-main .add-friend .btn-list button:last-child{
-    background: rgba(66, 65, 65, 0.418);
-    color:white;
+main .add-friend .btn-list button:last-child {
+  background: rgba(66, 65, 65, 0.418);
+  color: white;
+}
+.section {
+  width: 330px;
+}
+.section .header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 0.5px solid var(--bg-black-2);
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.2px solid var(--bg-black-2);
+}
+.section .header .commit-back {
+  width: 60px;
+  height: 100%;
+
+  position: relative;
+}
+.section .header .commit-back span {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.section .header .commit-back span:hover {
+  background: var(--bg-black-2);
+}
+.section .header .commit-back span a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.section .header .word span {
+  color: rgb(85, 84, 84);
+  font-size: 13px;
+}
+.section .header .word h2,
+.section .header .word h3 {
+  color: var(--color-white-secondary);
+  letter-spacing: 1px;
+}
+.section .header .word h3 {
+  margin: 5px 0 0 -20px;
+}
+.section .data {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  overflow-y: visible;
+  position: relative;
+}
+.section .data .user {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  margin: 5px 0;
+}
+.section .data .user .profile {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.section .data .user .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section .data .user .rows {
+  width: 100%;
+  margin-left: 1px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section .data .user .rows h4 {
+  color: var(--color-white-secondary);
+  margin-bottom: 5px;
+}
+
+.section .data .user .rows .btn-list button {
+  width: 120px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: var(--bg-btn-blue);
+  cursor: pointer;
+  margin: 0 2px;
+  color: white;
+}
+.section .data .user .rows .btn-list button:last-child {
+  position: absolute;
+}
+.section .data::-webkit-scrollbar {
+  width: 10px;
+}
+.section .data::-webkit-scrollbar-thumb {
+  background: var(--bg-black-2);
+}
+.messages {
+  width: 75.6%;
+  height: 630px;
+  margin-left: 333px;
+  flex-direction: column;
+}
+.messages h2 {
+  color: var(--color-white-3);
 }
