@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 body {
   min-width: 1345px;
   width: 100%;
   position: relative;
   background: var(--bg-black-primary);
   overflow-x: hidden;
+  font-family: "Rubik", system-ui;
+  font-optical-sizing: auto;
 }
 .disable {
   display: none;
@@ -121,7 +124,7 @@ body {
   font-size: 22px;
   color: gray;
 }
-/*Gestion des resultats*/
+/*Gestion des résultats*/
 .head .result {
   width: 310px;
   height: 410px;
@@ -195,7 +198,7 @@ body {
   top: 40px;
   align-items: center;
   display: none;
-  /* Changer par flex lorsque le resultat de la recherche seras positive */
+  /* Changer par flex lorsque le résultat de la recherche seras positive */
 }
 .head .result .not-found span {
   position: absolute;

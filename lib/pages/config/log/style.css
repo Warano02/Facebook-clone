@@ -1,7 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+:root {
+  --bg-grey: #f4f6f7;
+  --bg-blue: #0d81e0de;
+  --color-black-primary: #000;
+  --bg-white: #fff;
+  --border: #3363e6;
+  --bg-green: #15dd79;
+  --bg-green-h: #0dca6b;
   font-family: "Montserrat", sans-serif;
 }
 html {
@@ -78,10 +86,12 @@ body {
   font-size: 1.9rem;
   color: rgb(29, 33, 41);
 }
-.rigth form input::placeholder ,.container main form input::placeholder{
+.rigth form input::placeholder,
+.container main form input::placeholder {
   font-size: 1.5rem;
 }
-.rigth form input:focus,.container main form input:focus {
+.rigth form input:focus,
+.container main form input:focus {
   border-color: #1c4ed6;
   border-width: 1.5px;
   box-shadow: 0px 0px 2px 0px var(--border);
@@ -131,7 +141,7 @@ body {
   background: var(--bg-green);
 }
 .rigth .kld:hover {
-  background: var(--bg-green-h)
+  background: var(--bg-green-h);
 }
 .rigth p {
   width: 330px;
@@ -250,7 +260,7 @@ footer img {
   top: -150px;
   width: 100%;
   height: 135vh;
-  background: #f6f7f4a1;
+  background: #f6f7f4e7;
   display: flex;
   justify-content: center;
   transition: 0.5s;
@@ -258,7 +268,7 @@ footer img {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-
+  /* display: none; */
 }
 .container main {
   width: 435px;
@@ -316,7 +326,7 @@ footer img {
   display: flex;
   justify-content: space-between;
 }
-.container main form .inp1 input{
+.container main form .inp1 input {
   width: 195px;
   height: 38px;
   font-size: 1.5rem;
@@ -332,13 +342,13 @@ footer img {
   letter-spacing: 1px;
   outline: none;
 }
-.container main form .inp2{
+.container main form .inp2 {
   width: 100%;
   height: 95px;
   display: flex;
   flex-direction: column;
 }
-.container main form .inp2 input{
+.container main form .inp2 input {
   width: 410px;
   height: 38px;
   border-radius: 5px;
@@ -351,47 +361,49 @@ footer img {
   border: 1px solid var(--bg-grey);
   outline: none;
 }
-.container main form div i{
+.container main form div i {
   position: absolute;
   right: 10px;
   font-size: 20px;
   color: red;
-  display: none;/* Change lorsque les informatios qu'enre l'utilisateurs  sont correct*/
+  display: none; /* Change lorsque les informations qu'entre l'utilisateurs  sont correct*/
 }
-.container main form .i1,.container main form .i2{
+.container main form .i1,
+.container main form .i2 {
   left: 186px;
   top: 20px;
 }
-.container main form .i2{
+.container main form .i2 {
   left: 396px;
 }
-.container main form .i3{
+.container main form .i3 {
   top: 15px;
 }
-.container main form .i4{
+.container main form .i4 {
   top: 62px;
 }
-.container main form .date{
+.container main form .date {
   width: 100%;
   height: 60px;
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
 }
-.container main form .date i,.container main form .sex i{
+.container main form .date i,
+.container main form .sex i {
   display: block;
   color: #000;
   font-size: 1.2rem;
   left: 90px;
   top: 1px;
 }
-.container main form .date .option{
+.container main form .date .option {
   width: 100%;
   margin-top: 2px;
   display: flex;
   justify-content: space-between;
 }
-.container main form .date .option select{
+.container main form .date .option select {
   width: 123px;
   height: 35px;
   padding: 5px;
@@ -399,16 +411,16 @@ footer img {
   outline: none;
   font: bold;
 }
-.container main form .date .option select:focus{
+.container main form .date .option select:focus {
   box-shadow: 0px 0px 2px 0px var(--border);
 }
-.container main form .sex span{
+.container main form .sex span {
   font-size: 1.2rem;
 }
-.container main form .sex i{
+.container main form .sex i {
   left: 30px;
 }
-.container form .sex .option{
+.container form .sex .option {
   width: 376px;
   margin: 5px;
   display: flex;
@@ -417,9 +429,8 @@ footer img {
   height: 60px;
   padding: 10px;
   font-size: 1.5rem;
-
 }
-.container form .sex .option label{
+.container form .sex .option label {
   width: 125px;
   height: 30px;
   border: 1px solid var(--bg-grey);
@@ -429,19 +440,18 @@ footer img {
   letter-spacing: 0.5px;
   cursor: pointer;
 }
-.container form .sex .option label:focus{
+.container form .sex .option label:focus {
   box-shadow: 0px 0px 2px 0px var(--border);
-
 }
-.container form .sex .option input{
+.container form .sex .option input {
   position: relative;
   margin-left: -23px;
   margin-top: 15px;
   height: 10px;
   width: 10px;
 }
-.container form .txt{
-  margin: 5px ;
+.container form .txt {
+  margin: 5px;
   width: 392px;
   height: 100px;
   font-size: 1.2rem;
@@ -450,19 +460,19 @@ footer img {
   /* font-family: "Montserrat", sans-serif; */
   color: grey;
 }
-.container form .txt a{
+.container form .txt a {
   color: var(--bg-blue);
   text-decoration: none;
 }
-.container form .txt a:hover{
+.container form .txt a:hover {
   text-decoration: underline;
 }
-.container .txt .p{
+.container .txt .p {
   width: 384px;
 }
-.container form button{
+.container form button {
   width: 200px;
-  height:44px;
+  height: 44px;
   font-size: 18px;
   letter-spacing: 0.5px;
   text-align: center;
@@ -479,6 +489,6 @@ footer img {
   margin: 40px 0 10px 100px;
   cursor: pointer;
 }
-.container form button:hover{
+.container form button:hover {
   background: var(--bg-green-h);
 }
